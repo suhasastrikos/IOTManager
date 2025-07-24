@@ -89,7 +89,7 @@ const ImportModal = ({ isOpen, onClose, onImport, title, acceptedFormats }) => {
 
   const xmlToJson = (xml) => {
     // Simple XML to JSON converter (basic implementation)
-    const obj = {};
+    let obj = {};
     
     if (xml.nodeType === 1) {
       if (xml.attributes.length > 0) {
